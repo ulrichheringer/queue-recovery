@@ -1,0 +1,9 @@
+services:
+  rabbitmq:
+    image: rabbitmq:4.3.6-management
+    environment:
+      RABBITMQ_DEFAULT_USER: lab
+      RABBITMQ_DEFAULT_PASS: local-lab
+    ports:
+      - "5672:5672"
+      - "15672:15672"
